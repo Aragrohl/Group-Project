@@ -2,9 +2,9 @@
 <html lang="en"> 
 
 <!--   
-Author Name: Mort Hedges
+Author Name: 14 Eyes - Mort Hedges
 Project Name: Who wants to win £1
-Date: 28/01/2020
+Date: 10/02/2020
 Module: Computing project
 Version: V1
 -->
@@ -13,7 +13,7 @@ Version: V1
     <meta charset="utf-8"/>
     <link rel="stylesheet"  href="CSS/style.css">
     <script type="text/javascript" src="JS/javascript.js"></script>
-    <title>Pontoon - Game</title>
+    <title>Who wants to win £1</title>
 </head>
 
 <body>
@@ -22,26 +22,31 @@ Version: V1
     </div>
 
     <div id="game_page">
-        <div id="question_box">
-
+        <div id="game_box">
+            <div>
+                <div class="text_box">
+                    <p id="question">Test</p>
+                </div>
+                <div class="button_box">
+                    <button class="answer_button" id="answer1">A</button> 
+                    <button class="answer_button" id="answer2">B</button> 
+                    <button class="answer_button" id="answer3">C</button> 
+                    <button class="answer_button" id="answer4">D</button>    
+                </div>
+            </div>
         </div>
         
-        <div class="button_box">
-            <button class="answer_button" id="answer1"></button> 
-            <button class="answer_button" id="answer2"></button> 
-            <button class="answer_button" id="answer3"></button> 
-            <button class="answer_button" id="answer4"></button>    
-        </div>
+
 
         <div id="life_lines">
-            <button id="life_line1"></button>
-            <button id="life_line2"></button>
-            <button id="life_line3"></button>
+            <button id="life_line1" onclick="printQuestions();">Change question</button>
+            <button id="life_line2">Hint</button>
+            <button id="life_line3">???</button>
         </div>
     </div>
 
     <div id="score_page">
-
+        <p></p>
     </div>
 
 </body>
