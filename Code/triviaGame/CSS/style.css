@@ -1,8 +1,23 @@
 /*
 Author Name: Mort Hedges
 Project Name: Who wants to win £1
-Date: 28/01/2020
+Date: 03/02/2020
 Module: Computing project
 Version: V1
 */
 
+
+#game_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: auto;
+    height: 500px;
+    width: 70%;
+    background-color: blue;
+}
+
+#life_lines {
+    
+}
