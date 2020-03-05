@@ -1,6 +1,6 @@
 /*
 Author Name: Mort Hedges
-Project Name: Who wants to win £1
+Project Name: In for a penny in for a pound
 Date: 03/02/2020
 Module: Computing project
 Version: V1
@@ -15,9 +15,12 @@ Version: V1
     margin: auto;
     height: 500px;
     width: 70%;
-    background-color: blue;
+    background-color: rgb(112, 112, 218);
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 2px;
 }
 
-#life_lines {
-    
-}
+
