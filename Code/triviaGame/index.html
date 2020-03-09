@@ -2,7 +2,7 @@
 <html lang="en"> 
 
 <!--   
-Author Name: 14 Eyes - Mort Hedges
+Author Name: 14 Eyes - Mort Hedges and Jack starrs
 Project Name: In for a penny in for a pound
 Date: 10/02/2020
 Module: Computing project
@@ -15,38 +15,83 @@ Version: V1
     <title>In for a penny in for a pound</title>
 </head>
 
-<body>
-    <script type="text/javascript" src="JS/javascript.js"></script>
-    <div id="landing_page">
-
+<body onload="question();">
+	
+    <div class="textbox">
+        <p id="question">...</p>
     </div>
+	
+	
+	<div id="life_lines">
+		<button id ="change" class="line"></button>
+		<br>
+        <button id ="hint" class="line"></button>
+		<br>
+        <button id ="fift" class="line"></button>
+    </div>	
 
-    <div id="game_page">
-        <div id="game_box">
-            <div>
-                <div class="text_box">
-                    <p id="question">Test</p>
-                </div>
-                <div class="button_box">
-                    <button class="answer_button" id="answer1">A</button> 
-                    <button class="answer_button" id="answer2">B</button> 
-                    <button class="answer_button" id="answer3">C</button> 
-                    <button class="answer_button" id="answer4">D</button>    
-                </div>
-            </div>
-        </div>
+	<div id = "progress">
+	
+		<div class="Lvl" id="Lvl10">
+			<p>10 - £512</p>
+		</div>
+		<div class="Lvl" id="Lvl9">
+			<p>9 - £256</p>
+		</div>
+		<div class="Lvl" id="Lvl8">
+			<p>8 - £128</p>
+		</div>
+		<div class="Lvl" id="Lvl7">
+			<p>7 - £64</p>
+		</div>
+		<div class="Lvl" id="Lvl6">
+			<p>6 - £32</p>
+		</div>
+		<div class="Lvl" id="Lvl5">
+			<p>5 - £16</p>
+		</div>
+		<div class="Lvl" id="Lvl4">
+			<p>4 - £8</p>
+		</div>
+		<div class="Lvl" id="Lvl3">
+			<p>3 - £4</p>
+		</div>
+		<div class="Lvl" id="Lvl2">
+			<p>2 - £2</p>
+		</div>
+		<div class="Lvl" id="Lvl1">
+			<p>1- £1</p>
+		</div>
+
+	</div>
+
+
+	
+<br>	
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+		
+	
+    <div class="buttonBox">
+        <button class="answer_button" id="answer1" onclick="answerQuestion(1)">A</button> 
+        <button class="answer_button" id="answer2" onclick="answerQuestion(2)">B</button> 
+        <button class="answer_button" id="answer3" onclick="answerQuestion(3)">C</button> 
+        <button class="answer_button" id="answer4" onclick="answerQuestion(4)">D</button>    
+    </div>
         
-
-
-        <div id="life_lines">
-            <button id="life_line1">Change question</button>
-            <button id="life_line2">Hint</button>
-            <button id="life_line3" onclick="test();">???</button>
-        </div>
-    </div>
-
-    <div id="score_page">
-        <p></p>
-    </div>
+	<script type="text/javascript" src="JS/javascript.js"></script>
 
 </body>

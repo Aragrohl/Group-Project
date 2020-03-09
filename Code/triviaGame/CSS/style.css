@@ -7,20 +7,91 @@ Version: V1
 */
 
 
-#game_box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+body{
+	background-color: rgb(112, 112, 218);
+	
+}
 
-    margin: auto;
-    height: 500px;
-    width: 70%;
-    background-color: rgb(112, 112, 218);
-
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-    border-radius: 2px;
+.answer_button{
+	
+	width: 12%;
+	height: 100px;
+	margin-left:2.5%;
+	font-size:20px;
 }
 
 
+.textbox{
+	
+	background-color: rgb(254, 254, 254);
+	width: 55%;
+	height: 350px;
+	font-size: 45px;
+	margin-top: 2.5%;
+	margin-left: 5%;
+	float:left;
+}
+
+.buttonBox{
+	
+	margin-left:2.5%;	
+}
+
+#life_lines{
+	float:left;
+	margin-right: 5%;
+	margin-left: 2.5%;
+	margin-top: 2%
+	
+}
+
+.line {
+	width: 100px;
+	margin-top: 15%;
+	height: 100px;
+
+}
+
+#progress {
+	width: 15%;
+	height: 400px;
+	background-color: rgb(254, 254, 254);
+	float:left;
+	margin-top: 2.5%;
+}
+
+.Lvl {
+	font-size: 30px;
+	margin-top: -30px;
+	text-decoration: bold;
+	width:100%;
+	text-align: center;
+	height:40px;
+}
+
+
+#question
+{
+	text-align: center;
+	vertical-align: middle;
+	line-height: 120px;
+}
+
+#fift {
+	background-image:url("../images/fif.png");
+	background-size:contain;
+	border-radius: 50%;
+	border-style: none;
+}
+#change {
+	background-image:url("../images/sort.png");
+	background-size:contain;
+	border-radius: 50%;
+	border-style: none;
+}
+#hint {
+	background-image:url("../images/apple.png");
+	background-size:contain;
+	border-radius: 50%;
+	border-style: none;
+}
