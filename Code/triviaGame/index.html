@@ -2,36 +2,37 @@
 <html lang="en"> 
 
 <!--   
-Author Name: 14 Eyes - Mort Hedges and Jack starrs
+Author Name: 14 Eyes - Mort Hedges & Jack Starrs
 Project Name: In for a penny in for a pound
-Date: 10/02/2020
+Date: 04/04/2020
 Module: Computing project
 Version: V1
 -->
 
 <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet"  href="CSS/style.css">
+	<link rel="stylesheet"  href="CSS/style.css">
+	<script type="text/javascript" src="JS/javascript.js"></script>
     <title>In for a penny in for a pound</title>
 </head>
 
-<body onload="question();">
+<body onload="question()">
 	
     <div class="textbox">
         <p id="question">...</p>
+		<p id="hint">...</p>
     </div>
 	
 	
 	<div id="life_lines">
-		<button id ="change" class="line"></button>
+		<button id ="change" onClick="change()" class="line"></button>
 		<br>
-        <button id ="hint" class="line"></button>
+        <button id ="hint_button" onClick="hints()" class="line"></button>
 		<br>
-        <button id ="fift" class="line"></button>
+        <button id ="fift" onClick="fifty()" class="line"></button>
     </div>	
 
 	<div id = "progress">
-	
 		<div class="Lvl" id="Lvl10">
 			<p>10 - £512</p>
 		</div>
@@ -62,11 +63,8 @@ Version: V1
 		<div class="Lvl" id="Lvl1">
 			<p>1- £1</p>
 		</div>
-
 	</div>
 
-
-	
 <br>	
 <br>
 <br>
@@ -81,17 +79,11 @@ Version: V1
 <br>
 <br>
 <br>
-
-
-		
 	
     <div class="buttonBox">
-        <button class="answer_button" id="answer1" onclick="answerQuestion(1)">A</button> 
-        <button class="answer_button" id="answer2" onclick="answerQuestion(2)">B</button> 
-        <button class="answer_button" id="answer3" onclick="answerQuestion(3)">C</button> 
-        <button class="answer_button" id="answer4" onclick="answerQuestion(4)">D</button>    
+        <button class="answer_button" id="answer1" onclick="questionAnswer(1)">A</button> 
+        <button class="answer_button" id="answer2" onclick="questionAnswer(2)">B</button> 
+        <button class="answer_button" id="answer3" onclick="questionAnswer(3)">C</button> 
+        <button class="answer_button" id="answer4" onclick="questionAnswer(4)">D</button>    
     </div>
-        
-	<script type="text/javascript" src="JS/javascript.js"></script>
-
 </body>

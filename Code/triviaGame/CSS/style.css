@@ -8,7 +8,7 @@ Version: V1
 
 
 body{
-	background-color: rgb(112, 112, 218);
+	background-color: rgb(200, 200, 200);
 	
 }
 
@@ -18,18 +18,20 @@ body{
 	height: 100px;
 	margin-left:2.5%;
 	font-size:20px;
+	border-radius: 15px;
 }
 
 
 .textbox{
 	
-	background-color: rgb(254, 254, 254);
+	background-color: rgb(255, 255, 255);
 	width: 55%;
 	height: 350px;
-	font-size: 45px;
+	font-size: 25px;
 	margin-top: 2.5%;
 	margin-left: 5%;
 	float:left;
+	border-radius: 15px;
 }
 
 .buttonBox{
@@ -39,9 +41,10 @@ body{
 
 #life_lines{
 	float:left;
-	margin-right: 5%;
-	margin-left: 2.5%;
-	margin-top: 2%
+	margin-right: 10%;
+	margin-left: 5%;
+	margin-top: 2%;
+	border-radius: 15px;
 	
 }
 
@@ -76,6 +79,13 @@ body{
 	vertical-align: middle;
 	line-height: 120px;
 }
+#hint
+{
+	text-align: center;
+	vertical-align: middle;
+	line-height: 120px;
+	font-size: 24px;
+}
 
 #fift {
 	background-image:url("../images/fif.png");
@@ -89,7 +99,7 @@ body{
 	border-radius: 50%;
 	border-style: none;
 }
-#hint {
+#hint_button {
 	background-image:url("../images/apple.png");
 	background-size:contain;
 	border-radius: 50%;
